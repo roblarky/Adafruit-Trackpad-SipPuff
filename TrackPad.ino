@@ -173,7 +173,7 @@ int GetSipThreshold()
     EEPROM.update(sipThresholdAddr,sipDefaultThreshold); 
     tempSipThreshold = sipDefaultThreshold;
   }
-  Serial.print("Current Sip pressure threshold (+/-): ");
+  Serial.print("Current Sip pressure threshold: ");
   Serial.print(tempSipThreshold, DEC);
   Serial.println(" (hPa)");
   return tempSipThreshold;
@@ -187,7 +187,7 @@ int GetPuffThreshold()
     EEPROM.update(puffThresholdAddr,puffDefaultThreshold); 
     tempPuffThreshold = puffDefaultThreshold;
   }
-  Serial.print("Current Puff pressure threshold (+/-): ");
+  Serial.print("Current Puff pressure threshold: ");
   Serial.print(tempPuffThreshold, DEC);
   Serial.println(" (hPa)");
   return tempPuffThreshold;
