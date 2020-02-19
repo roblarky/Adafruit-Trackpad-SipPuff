@@ -215,7 +215,7 @@ void ReadTouchpadData(uint8_t clockWaits)
 void CheckForReceiveData()
 {
   //This function will only parse one command token then return
-  //Make sure responses fo not contain commas as client will encounter 
+  //Make sure responses do not contain commas as client will encounter 
   //an exception attempting to parse x,y,z
   
   //If there is data waiting to be received
